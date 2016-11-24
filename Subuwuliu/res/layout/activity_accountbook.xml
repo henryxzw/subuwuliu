@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <include 
+        android:id="@+id/accountbook_title"
+        layout="@layout/layout_title"
+        />
+    
+    <include 
+        layout="@layout/view_line_small"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#242736"
+        android:padding="@dimen/layout_content_left_right"
+        >
+        <RelativeLayout 
+            android:id="@+id/accountbook_select_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView 
+                android:id="@+id/accountbook_current_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/accountbook_vertical_space"
+                android:paddingBottom="@dimen/accountbook_vertical_space"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/accountbook_current_year_text_size"
+                android:text="2015年"
+                />
+            <com.johan.subuwuliu.view.AccountBookMonthView 
+                android:id="@+id/accountbook_current_month"
+                android:layout_width="@dimen/accountbook_current_month_width"
+                android:layout_height="@dimen/accountbook_current_month_height"
+                android:layout_below="@+id/accountbook_current_year"
+                />
+            <ImageView 
+                android:id="@+id/accountbook_select_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/account_direction"
+                android:layout_alignBottom="@+id/accountbook_current_month"
+                android:layout_toRightOf="@+id/accountbook_current_month"
+                android:layout_marginLeft="@dimen/accountbook_time_horizontal_space"
+                />
+        </RelativeLayout>
+        <View 
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#9c9c9c"
+            android:layout_marginLeft="@dimen/accountbook_line_left"
+            />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_content_title_size"
+            android:text="本月收入"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView 
+            android:id="@+id/accountbook_total_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_content_title_size"
+            android:text="0"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:id="@+id/accountbook_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/select_dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/select_good_background" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/select_dialog_padding_top_bottom"
+        android:layout_marginBottom="@dimen/select_dialog_padding_top_bottom"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/select_dialog_text_size"
+        android:text="@string/selecttime_title_tip"
+        android:gravity="center_horizontal"
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9c9c9c"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+		<com.johan.subuwuliu.view.WheelView
+		    android:id="@+id/selecttime_picker_year_view"
+		    android:layout_width="@dimen/selecttime_sigal_width"
+		    android:layout_height="wrap_content"
+		    />
+		<com.johan.subuwuliu.view.WheelView
+		    android:id="@+id/selecttime_picker_month_view"
+		    android:layout_width="@dimen/selecttime_sigal_width"
+		    android:layout_height="wrap_content"
+		    />
+		<com.johan.subuwuliu.view.WheelView
+		    android:id="@+id/selecttime_picker_day_view"
+		    android:layout_width="@dimen/selecttime_sigal_width"
+		    android:layout_height="wrap_content"
+		    />
+	</LinearLayout>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9c9c9c"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	  	android:orientation="horizontal"
+        >
+        <Button 
+            android:id="@+id/selecttime_but_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/select_dialog_padding_top_bottom"
+            android:paddingBottom="@dimen/select_dialog_padding_top_bottom"
+            android:gravity="center_horizontal"
+            android:textColor="#6c6c6c"
+            android:textSize="@dimen/select_dialog_text_size"
+            android:text="@string/selecttime_but_cancel_tip"
+            android:background="#eeeeee"
+            />
+        <View 
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#9c9c9c"
+            />
+        <Button 
+            android:id="@+id/selecttime_but_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/select_dialog_padding_top_bottom"
+            android:paddingBottom="@dimen/select_dialog_padding_top_bottom"
+            android:gravity="center_horizontal"
+            android:textColor="#6c6c6c"
+            android:textSize="@dimen/select_dialog_text_size"
+            android:text="@string/selecttime_but_ok_tip"
+            android:background="#eeeeee"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/makeheadsview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+    
+     <include 
+        android:id="@+id/makeheadsview_title"
+        layout="@+layout/layout_title_2"
+        />
+     
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         >
+         
+         <com.johan.subuwuliu.view.ClipImageView
+	        android:id="@+id/makeheadsview_srcview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"/>
+	
+	     <com.johan.subuwuliu.view.ClipView
+	        android:id="@+id/makeheadsview_clipview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" />
+         
+     </RelativeLayout>
+
+</LinearLayout>

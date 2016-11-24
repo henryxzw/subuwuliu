@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recentordernotification_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    >
+	<LinearLayout
+	    android:layout_width="@dimen/select_dialog_width"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/receiverorder_content_top_background"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginTop="@dimen/receiverorder_content_vertical_space"
+	            android:text="装货提醒"
+	            android:textColor="#ffffff"
+	            android:textSize="@dimen/layout_content_big_size" />
+	
+	        <TextView
+	            android:id="@+id/recentordernotification_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+	            android:textColor="#ffffff"
+	            android:textSize="@dimen/layout_content_text_size" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/receiverorder_content_bottom_background"
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/layout_content_left_right"
+	            android:layout_marginRight="@dimen/layout_content_left_right"
+	            android:orientation="horizontal"
+	            android:paddingTop="@dimen/receiverorder_content_vertical_space" >
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+	                android:text="装货地址："
+	                android:textColor="#6c6c6c"
+	                android:textSize="@dimen/layout_content_text_size" />
+	
+	            <TextView
+	                android:id="@+id/recentordernotification_address"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+	                android:textColor="#6c6c6c"
+	                android:textSize="@dimen/layout_content_text_size" />
+	        </LinearLayout>
+	
+	        <include layout="@layout/view_line_small" />
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="@dimen/layout_content_left_right"
+	            android:layout_marginRight="@dimen/layout_content_left_right"
+	            android:orientation="horizontal"
+	            android:paddingBottom="@dimen/receiverorder_content_vertical_space"
+	            android:paddingTop="@dimen/receiverorder_content_vertical_space" >
+	
+	            <Button
+	                android:id="@+id/recentordernotification_but_left"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="10dp"
+	                android:layout_weight="1"
+	                android:paddingTop="8dp"
+	                android:paddingBottom="8dp"
+	                android:background="@drawable/unbinding_dialog_but_cancel_background"
+	                android:text="订单详情"
+	                android:textColor="#d24848"
+	                android:textSize="@dimen/layout_content_but_text_size" />
+	
+	            <Button
+	                android:id="@+id/recentordernotification_but_right"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="10dp"
+	                android:layout_weight="1"
+	                android:paddingTop="8dp"
+	                android:paddingBottom="8dp"
+	                android:background="@drawable/unbinding_dialog_but_ok_background"
+	                android:text="我知道了"
+	                android:textColor="#ffffff"
+	                android:textSize="@dimen/layout_content_but_text_size" />
+	        </LinearLayout>
+	    </LinearLayout>
+	
+	</LinearLayout>
+</RelativeLayout>

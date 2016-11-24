@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/select_dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/unbinding_padding"
+    android:background="@drawable/unbinding_dialog_background" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/unbinding_padding"
+        android:textColor="#d24848"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="是否解除"
+        android:textStyle="bold"
+        />
+    
+    <TextView 
+        android:id="@+id/unbinding_car_number_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/unbinding_padding"
+        android:textColor="#d24848"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="粤A22333车辆的绑定"
+        android:textStyle="bold"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/unbinding_padding"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/text_12_sp"
+        android:text="解绑后如没有绑定新车辆将不能上线接单"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/unbinding_but_top"
+        >
+        <Button 
+            android:id="@+id/unbinding_but_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/unbinding_padding"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_content_text_size"
+            android:text="解除绑定"
+            android:layout_marginRight="@dimen/unbinding_padding"
+            android:background="@drawable/unbinding_dialog_but_ok_background"
+            />
+        <Button 
+            android:id="@+id/unbinding_but_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/unbinding_padding"
+            android:textColor="#d24848"
+            android:textSize="@dimen/layout_content_text_size"
+            android:text="我再想想"
+            android:background="@drawable/unbinding_dialog_but_cancel_background"
+            />
+    </LinearLayout>
+
+</LinearLayout>

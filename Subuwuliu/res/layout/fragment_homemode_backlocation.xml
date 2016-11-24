@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/view_line_small"/>    
+
+    <TextView 
+        android:id="@+id/homemode_backlocation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/home_mode_left_right"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="回程地点"
+        />
+    
+	<include layout="@layout/view_line_small"/>
+    
+    <TextView 
+        android:id="@+id/homemode_backlocation_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_mode_left_right"
+        android:layout_marginRight="@dimen/home_mode_left_right"
+        android:layout_marginTop="@dimen/home_mode_fragment_top"
+        android:padding="@dimen/home_mode_backlocation_search_padding"
+        android:drawableLeft="@drawable/ss"
+        android:drawablePadding="@dimen/home_mode_backlocation_search_padding"
+        android:textColorHint="#9c9c9c"
+        android:background="@drawable/fragment_backlocation_searchbar"
+        android:hint="输入目的地"
+        />
+    <LinearLayout 
+        android:id="@+id/homemode_backlocation_location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/home_mode_left_right"
+        android:background="#ffe9d4"
+        android:layout_marginTop="@dimen/home_mode_fragment_top"
+        >
+        <TextView 
+	        android:id="@+id/homemode_backlocation_location"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textColor="#6c6c6c"
+	        android:textSize="@dimen/layout_content_text_size"
+	        android:text="中山地点"      
+	        />
+        <ImageView 
+            android:id="@+id/homemode_backlocation_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cancel"
+            />
+    </LinearLayout>
+    
+
+</LinearLayout>

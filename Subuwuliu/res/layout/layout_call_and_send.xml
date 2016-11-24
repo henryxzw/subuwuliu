@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#00000000" >
+    
+    <TextView 
+        android:id="@+id/select_picture_way_take1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/select_picture_way_text_top_bottom"
+        android:paddingBottom="@dimen/select_picture_way_text_top_bottom"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/select_picture_way_text_size"
+        android:text="@string/select_picture_way_tack_tip1"
+        android:background="#ffffff"
+        />
+    
+    <include layout="@layout/view_line_small" />
+    
+    <TextView 
+        android:id="@+id/select_picture_way_photo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/select_picture_way_text_top_bottom"
+        android:paddingBottom="@dimen/select_picture_way_text_top_bottom"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/select_picture_way_text_size"
+        android:text="@string/select_picture_way_photo_tip1"
+        android:background="#ffffff"
+        />
+    
+    <TextView 
+        android:id="@+id/select_picture_way_cancel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/select_picture_way_text_top_bottom"
+        android:paddingBottom="@dimen/select_picture_way_text_top_bottom"
+        android:layout_marginTop="@dimen/select_picture_way_text_space"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/select_picture_way_text_size"
+        android:text="@string/select_picture_way_cancel_tip1"
+        android:background="#ffffff"
+        />
+    
+</LinearLayout>
+

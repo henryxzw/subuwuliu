@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout 
+        android:id="@+id/item_driverrecordroute_icon_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_driverrecordroute_info_layout"
+        android:layout_alignTop="@+id/item_driverrecordroute_info_layout"
+        >
+        <ImageView 
+            android:id="@+id/item_driverrecordroute_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ywcd"
+            />
+        <View 
+            android:id="@+id/item_driverrecordroute_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#84C148"
+            android:layout_below="@+id/item_driverrecordroute_icon"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/item_driverrecordroute_info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_driverrecordroute_icon_layout"
+        android:layout_marginLeft="@dimen/layout_content_left_right"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:id="@+id/item_driverrecordroute_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textColor="#3c3c3c"
+            android:textSize="@dimen/layout_content_tip_size"
+            />
+        <TextView 
+            android:id="@+id/item_driverrecordroute_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/layout_content_tip_size"
+            android:layout_marginTop="@dimen/driverrecorddetail_item_info_vertical_space"
+            />
+        <com.johan.subuwuliu.view.ScrollGridView 
+            android:id="@+id/item_driverrecordroute_picture_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:scrollbars="none"
+	        android:numColumns="4"
+            />
+        <TextView 
+            android:id="@+id/item_driverrecordroute_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/layout_content_tip_size"
+            />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9c9c9c"
+            android:layout_marginTop="@dimen/driverrecorddetail_item_info_vertical_space"
+            android:layout_marginBottom="@dimen/layout_content_left_right"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

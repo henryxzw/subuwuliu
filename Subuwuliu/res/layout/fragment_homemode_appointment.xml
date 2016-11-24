@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_line_small"/>    
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/home_mode_left_right"
+        >
+        <TextView 
+	        android:id="@+id/homemode_appointment_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#6c6c6c"
+	        android:textSize="@dimen/layout_content_text_size"
+	        android:text="预约时间设置"
+	        />
+    </RelativeLayout>
+    
+	<include layout="@layout/view_line_small"/>
+	
+	<ListView 
+	    android:id="@+id/homemode_appointment_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="@dimen/home_mode_fragment_top"
+	    android:divider="@null"
+	    android:dividerHeight="@dimen/appointment_item_space"
+	    android:scrollbars="none"
+	    android:cacheColorHint="#00000000"
+	    ></ListView>
+
+</LinearLayout>

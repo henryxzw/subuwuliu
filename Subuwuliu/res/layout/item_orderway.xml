@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout 
+        android:id="@+id/item_orderway_icon_layout"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_orderway_info_layout"
+        android:layout_alignTop="@+id/item_orderway_info_layout"
+        >
+	    <ImageView 
+	        android:id="@+id/item_orderway_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:src="@drawable/qidian1"
+			android:layout_centerHorizontal="true"
+	        />
+	    <View 
+	        android:id="@+id/item_orderway_line"
+	        android:layout_width="1dp"
+	        android:layout_height="match_parent"
+	        android:background="#3C3C3C"
+	        android:layout_below="@+id/item_orderway_icon"
+	        android:layout_centerHorizontal="true"
+	        />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/item_orderway_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_orderway_icon_layout"
+        android:layout_marginLeft="@dimen/orderdetail_way_item_left"
+        android:paddingBottom="@dimen/orderdetail_way_item_space"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:id="@+id/item_orderway_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6c6c6c"
+            android:textSize="@dimen/layout_content_text_size"
+            />
+        <TextView 
+            android:id="@+id/item_orderway_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/orderdetail_way_item_vertical_space"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/layout_content_tip_size"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

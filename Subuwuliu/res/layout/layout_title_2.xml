@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_layout_height"
+    android:background="#242736" >
+    
+    <TextView 
+        android:id="@+id/title_2_layout_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/title_layout_title_size"
+        />
+    
+    <ImageView 
+        android:id="@+id/title_2_layout_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/title_layout_left_right"
+        android:paddingRight="@dimen/title_layout_left_right"
+        android:onClick="back"
+        />
+    
+    <TextView
+        android:id="@+id/title_2_layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/title_2_layout_tip"
+        android:clickable="true"
+        android:onClick="clickTip"
+        android:paddingLeft="@dimen/title_layout_left_right"
+        android:paddingRight="@dimen/title_layout_left_right"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/title_layout_text_size" />
+
+</RelativeLayout>

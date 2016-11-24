@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/setting_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/setting_gps_background"
+    android:padding="@dimen/layout_content_left_right" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="手机时间异常"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="服务器时间和系统时间相差较远，请重新设置手机时间，否则软件无法使用"
+        android:layout_marginTop="@dimen/setting_gps_dialog_tip_top_bottom"
+        android:layout_marginBottom="@dimen/setting_gps_dialog_tip_top_bottom"
+        android:lineSpacingExtra="5dp"
+        />
+    
+    <Button 
+        android:id="@+id/setting_systemtime_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d24848"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="@string/setting_gps_but_tip"
+        android:layout_gravity="right"
+        android:background="#eeeeee"
+        />
+
+</LinearLayout>

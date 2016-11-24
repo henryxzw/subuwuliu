@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    
+    <size
+        android:width="@dimen/home_mode_but_size"
+        android:height="@dimen/home_mode_but_size"
+        />
+    
+    <solid
+        android:color="#60ffffff"
+        />
+    
+    <stroke
+        android:color="#20ffffff"
+        android:width="10dp"
+        />
+
+</shape>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registerdriver_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/registerdriver_title"
+        layout="@+layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right"
+                android:paddingTop="@dimen/layout_content_white_background_space" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_small_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_first_name"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <EditText
+                    android:id="@+id/registerdriver_first_nameA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:hint="@string/registerdriver_first_name_tip"
+                    android:inputType="text"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <requestFocus />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right"
+                android:paddingTop="@dimen/layout_content_white_background_space" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_small_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_first_name"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <EditText
+                    android:id="@+id/registerdriver_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:hint="@string/registerdriver_first_name_tip"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_small_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_small_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_last_name"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <EditText
+                    android:id="@+id/registerdriver_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:hint="@string/registerdriver_last_name_tip"
+                    android:inputType="text"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_small_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:visibility="gone"
+                android:background="#9c9c9c" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_small_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_drive_time"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <EditText
+                    android:id="@+id/registredriver_driver_time"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:hint="@string/registerdriver_drive_time_tip"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_drive_time_unit"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registerdriver_info_space"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_big_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_resident_area"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/registerdriver_location_horizontal_space"
+                    android:src="@drawable/luxian" />
+
+                <TextView
+                    android:id="@+id/registerdriver_resident_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:hint="@string/registerdriver_resident_area_tip"
+                    android:singleLine="true"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_big_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_big_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_familiar_city"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <com.johan.subuwuliu.view.ScrollGridView
+                    android:id="@+id/registerdriver_familiar_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" >
+                </com.johan.subuwuliu.view.ScrollGridView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_big_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_big_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_goods_preference"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <com.johan.subuwuliu.view.ScrollGridView
+                    android:id="@+id/registerdriver_goods_preference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registerdriver_info_space"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#dddddd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/registerdriver_info_space"
+                android:text="@string/registerdriver_upload_tip"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/text_12_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_upload_identification"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_upload_identification_tip"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/layout_content_tip_size" />
+            </LinearLayout>
+
+            <com.johan.subuwuliu.view.ScrollGridView
+                android:id="@+id/registerdriver_upload_identification_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_left_right"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_middle_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_upload_limittime"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:id="@+id/registerdriver_upload_identification_limittime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:hint="@string/registerdriver_upload_limittime_tip"
+                    android:inputType="text"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_middle_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/registerdriver_info_space"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_upload_driver_license"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_upload_driver_license_tip"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/layout_content_tip_size" />
+            </LinearLayout>
+
+            <com.johan.subuwuliu.view.ScrollGridView
+                android:id="@+id/registerdriver_upload_driver_license_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_left_right"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_middle_title_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registerdriver_upload_limittime"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:id="@+id/registerdriver_upload_driver_license_limittime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:hint="@string/registerdriver_upload_limittime_tip"
+                    android:inputType="text"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_middle_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <Button
+                android:id="@+id/registerdriver_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_but_height"
+                android:layout_marginBottom="@dimen/layout_content_left_right"
+                android:layout_marginLeft="@dimen/layout_content_left_right"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_left_right"
+                android:background="@drawable/login_register_but"
+                android:text="@string/registerdriver_next_but_tip"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/layout_content_but_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

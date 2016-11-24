@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <include 
+        android:id="@+id/changecar_title"
+        layout="@+layout/layout_title"
+        />
+    
+    <EditText 
+        android:id="@+id/changecar_car_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_content_corner_edittext_height"
+        android:layout_below="@+id/changecar_title"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_content_corner_edittext_padding_left_right"
+        android:paddingRight="@dimen/layout_content_corner_edittext_padding_left_right"
+        android:layout_marginLeft="@dimen/layout_content_left_right"
+        android:layout_marginRight="@dimen/layout_content_left_right"
+        android:layout_marginTop="@dimen/layout_content_white_background_space"
+        android:drawableLeft="@drawable/cph"
+        android:drawablePadding="@dimen/layout_content_corner_edittext_padding_left_right"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_tip_size"
+        android:textColorHint="#9c9c9c"
+        android:hint="@string/changecar_car_number_tip"
+        android:singleLine="true"
+        android:background="@drawable/rectangle_gray_white"
+        android:inputType="numberSigned"
+        />
+    
+    <Button 
+        android:id="@+id/changecar_but"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_content_but_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_content_left_right"
+        android:background="@drawable/login_register_but"
+        android:text="@string/changecar_but_tip"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/layout_content_but_text_size"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

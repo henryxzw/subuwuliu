@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remotelogin_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <include 
+        android:id="@+id/remotelogin_title"
+        layout="@+layout/layout_title"
+        />
+    
+    <EditText 
+        android:id="@+id/remotelogin_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_content_corner_edittext_height"
+        android:layout_marginTop="@dimen/title_layout_bottom"
+        android:layout_below="@+id/remotelogin_title"
+        android:layout_marginLeft="@dimen/layout_content_left_right"
+        android:layout_marginRight="@dimen/layout_content_left_right"
+        android:paddingLeft="@dimen/layout_content_corner_edittext_padding_left_right"
+        android:paddingRight="@dimen/layout_content_corner_edittext_padding_left_right"
+        android:inputType="phone"
+        android:hint="@string/remotelogin_phone_tip"
+        android:textColorHint="#9c9c9c"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size"
+        android:background="@drawable/corner_5dp_gray_white"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/remotelogin_checknumber_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remotelogin_phone"
+        android:layout_marginLeft="@dimen/layout_content_left_right"
+        android:layout_marginRight="@dimen/layout_content_left_right"
+        android:layout_marginTop="@dimen/layout_content_corner_edittext_space"
+        android:orientation="horizontal"
+        >
+        <EditText 
+            android:id="@+id/remotelogin_checknumber"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/layout_content_corner_edittext_height"
+	        android:layout_weight="1"
+	        android:inputType="number"
+	        android:hint="@string/remotelogin_checknumber_tip"
+	        android:textColorHint="#9c9c9c"
+	        android:textColor="#6c6c6c"
+	        android:textSize="@dimen/layout_content_text_size"
+	        android:background="@drawable/corner_5dp_gray_white"
+	        android:paddingLeft="@dimen/layout_content_corner_edittext_padding_left_right"
+	        android:paddingRight="@dimen/layout_content_corner_edittext_padding_left_right"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center_vertical"
+	        />
+        <Button 
+            android:id="@+id/remotelogin_get_checknumber"
+            android:layout_width="@dimen/get_checknumber_but_width"
+            android:layout_height="@dimen/get_checknumber_but_height"
+            android:background="@drawable/login_register_check_number"
+            android:textColor="#ffffff"
+            android:text="@string/remotelogin_get_checknumber_tip"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    
+    <EditText 
+        android:id="@+id/remotelogin_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_content_corner_edittext_height"
+        android:layout_below="@+id/remotelogin_checknumber_layout"
+        android:layout_marginLeft="@dimen/layout_content_left_right"
+        android:layout_marginRight="@dimen/layout_content_left_right"
+        android:paddingLeft="@dimen/layout_content_corner_edittext_padding_left_right"
+        android:paddingRight="@dimen/layout_content_corner_edittext_padding_left_right"
+        android:inputType="textPassword"
+        android:hint="@string/remotelogin_password_tip"
+        android:textColorHint="#9c9c9c"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size"
+        android:background="@drawable/corner_5dp_gray_white"
+        android:layout_marginTop="@dimen/layout_content_corner_edittext_space"
+        android:gravity="center_vertical"
+        />
+    
+    <Button 
+        android:id="@+id/remotelogin_but"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_content_but_height"
+        android:layout_marginBottom="@dimen/layout_content_left_right"
+        android:layout_marginLeft="@dimen/layout_content_left_right"
+        android:layout_marginRight="@dimen/layout_content_left_right"
+        android:background="@drawable/login_register_but"
+        android:text="@string/remotelogin_but_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/layout_content_but_text_size"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

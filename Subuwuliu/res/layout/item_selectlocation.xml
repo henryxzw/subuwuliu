@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+	    <TextView 
+	        android:id="@+id/selectlocation_item_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#6c6c6c"
+	        android:textSize="@dimen/selectlocation_item_title_size"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/selectlocation_item_detail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/selectlocation_item_space"
+	        android:textColor="#9c9c9c"
+	        android:textSize="@dimen/selectlocation_item_detail_size"
+	        />
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/selectlocation_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/yldw"
+        />
+
+</LinearLayout>

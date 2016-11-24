@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/driverrecord_item_vertical_space"
+    android:paddingTop="@dimen/driverrecord_item_vertical_space" >
+
+    <LinearLayout
+        android:id="@+id/item_driverrecord_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/layout_content_left_right"
+            android:paddingRight="@dimen/layout_content_left_right" >
+
+            <TextView
+                android:id="@+id/item_driverrecord_operation_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#3c3c3c"
+                android:textSize="@dimen/layout_content_tip_size" />
+
+            <TextView
+                android:id="@+id/item_driverrecord_use_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3c3c3c"
+                android:textSize="@dimen/layout_content_tip_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_driverrecord_begin_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/driverrecord_item_vertical_space"
+            android:drawableLeft="@drawable/qidian"
+            android:drawablePadding="@dimen/driverrecord_item_vertical_space"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_content_left_right"
+            android:paddingRight="@dimen/layout_content_left_right"
+                android:textColor="#3c3c3c"
+            android:textSize="@dimen/layout_content_tip_size" />
+
+        <TextView
+            android:id="@+id/item_driverrecord_end_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/driverrecord_item_vertical_space"
+            android:drawableLeft="@drawable/zhongdian"
+            android:drawablePadding="@dimen/driverrecord_item_vertical_space"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/layout_content_left_right"
+            android:paddingRight="@dimen/layout_content_left_right"
+              android:textColor="#3c3c3c"
+            android:textSize="@dimen/layout_content_tip_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/driverrecord_item_vertical_space"
+            android:layout_marginTop="@dimen/driverrecord_item_vertical_space"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/driverrecord_item_vertical_space"
+            android:paddingLeft="@dimen/layout_content_left_right"
+            android:paddingRight="@dimen/layout_content_left_right" >
+
+            <TextView
+                android:id="@+id/item_driverrecord_car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#60BC93"
+                android:textSize="@dimen/layout_content_text_size" />
+
+            <TextView
+                android:id="@+id/item_driverrecord_car_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_content_left_right"
+                android:layout_toRightOf="@+id/item_driverrecord_car_number"
+                android:textColor="#60BC93"
+                android:textSize="@dimen/layout_content_text_size" />
+
+            <TextView
+                android:id="@+id/item_driverrecord_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="#60BC93"
+                android:textSize="@dimen/layout_content_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_line_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <Button
+            android:id="@+id/item_driverrecord_comment"
+            android:layout_width="@dimen/driverrecord_item_but_width"
+            android:layout_height="@dimen/driverrecord_item_but_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp"
+            android:background="@drawable/driverrecord_item_but_background"
+            android:gravity="center"
+            android:text="评价"
+            android:textColor="@drawable/driverrecord_item_but_text"
+            android:textSize="@dimen/layout_content_text_size" />
+
+        <TextView
+            android:id="@+id/item_driverrecord_car_status"
+            android:layout_width="@dimen/driverrecord_item_but_width"
+            android:layout_height="@dimen/driverrecord_item_but_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:gravity="center"
+            android:text="已签收"
+            android:textColor="@color/hongse"
+            android:textSize="@dimen/layout_content_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

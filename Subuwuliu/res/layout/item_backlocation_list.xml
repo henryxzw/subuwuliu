@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/layout_content_left_right"
+    android:paddingRight="@dimen/layout_content_left_right"
+    android:paddingTop="@dimen/backlocation_list_item_top_bottom"
+    android:paddingBottom="@dimen/backlocation_list_item_top_bottom"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/backlocation_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/layout_content_text_size"
+        android:textColor="#6c6c6c"
+        />
+    
+    <TextView 
+        android:id="@+id/backlocation_item_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/backlocation_list_item_vertical"
+        android:textSize="@dimen/layout_content_tip_size"
+        android:textColor="#6c6c6c"
+        />
+
+</LinearLayout>

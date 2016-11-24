@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/goorder_title_layout_top_bottom"
+        android:paddingLeft="@dimen/layout_content_left_right"
+        android:paddingRight="@dimen/layout_content_left_right"
+        android:paddingTop="@dimen/goorder_title_layout_top_bottom" >
+
+        <ImageView
+            android:id="@+id/goorder_info_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/didian" />
+
+        <Button
+            android:id="@+id/goorder_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/goorder_info_but_background"
+            android:padding="5dp"
+            android:textColor="#d24848"
+            android:textSize="@dimen/layout_content_tip_size" />
+
+        <TextView
+            android:id="@+id/goorder_info_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/goorder_title_layout_top_bottom"
+            android:layout_marginRight="@dimen/goorder_title_layout_top_bottom"
+            android:layout_toLeftOf="@+id/goorder_remain"
+            android:layout_toRightOf="@+id/goorder_info_icon"
+            android:singleLine="true"
+            android:textColor="#6c6c6c"
+            android:textSize="@dimen/layout_content_text_size" />
+
+        <TextView
+            android:id="@+id/goorder_info_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goorder_info_place"
+            android:layout_marginLeft="@dimen/goorder_title_layout_top_bottom"
+            android:layout_toLeftOf="@+id/goorder_remain"
+            android:layout_toRightOf="@+id/goorder_info_icon"
+            android:textColor="#6c6c6c"
+            android:textSize="@dimen/layout_content_tip_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/goorder_map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#a0ffffff" >
+
+            <LinearLayout
+                android:id="@+id/goorder_but_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_content_left_right" >
+
+                <Button
+                    android:id="@+id/goorder_but_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:background="@drawable/goorder_but_background"
+                    android:text="出发接货"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goorder_but_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_content_left_right"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/goorder_but_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:background="@drawable/goorder_but_background"
+                    android:text="到达装货点"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goorder_but_layout_A1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_content_left_right"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/goorder_but_A1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:background="@drawable/goorder_but_background"
+                    android:text="到达卸货中点站"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goorder_but_layout_A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_content_left_right"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/goorder_but_A2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:background="@drawable/goorder_but_background"
+                    android:text="到达卸货点"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goorder_but_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_content_left_right"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/goorder_but_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:layout_marginRight="@dimen/goorder_title_layout_top_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/goorder_but_background"
+                    android:text="上传照片"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <Button
+                    android:id="@+id/goorder_but_3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:layout_marginLeft="@dimen/goorder_title_layout_top_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/goorder_but_background"
+                    android:enabled="false"
+                    android:text="装货完成"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goorder_but_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_content_left_right"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/goorder_but_4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:layout_marginRight="@dimen/goorder_title_layout_top_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/goorder_but_background"
+                    android:text="上传照片"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <Button
+                    android:id="@+id/goorder_but_4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:layout_marginLeft="@dimen/goorder_title_layout_top_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/goorder_but_background"
+                    android:enabled="false"
+                    android:text="中途点卸货完成"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goorder_but_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_content_left_right"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/goorder_but_5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:layout_marginRight="@dimen/goorder_title_layout_top_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/goorder_but_background"
+                    android:text="上传照片"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <Button
+                    android:id="@+id/goorder_but_5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_content_but_height"
+                    android:layout_marginLeft="@dimen/goorder_title_layout_top_bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/goorder_but_background"
+                    android:enabled="false"
+                    android:text="完成订单"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/dangqianweizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/dangqianweizhi"  />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="64dp"
+            android:text="提交货物流程："
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_cheshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="TextView"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

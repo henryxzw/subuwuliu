@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/setting_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/setting_gps_background"
+    android:padding="@dimen/layout_content_left_right" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="请耐心等待，我们会对您提交的资料认真进行审核，需要大约一个工作日，通过后就可以正常使用了，谢谢您的支持。"
+        android:layout_marginTop="@dimen/layout_content_left_right"
+        android:layout_marginBottom="@dimen/layout_content_left_right"
+        android:lineSpacingExtra="5dp"
+        />
+    
+    <Button 
+        android:id="@+id/registerderiverfinish_but"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_content_but_height"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/layout_content_text_size"
+        android:text="确定"
+        android:background="@drawable/goorder_but_background"
+        />
+    
+</LinearLayout>

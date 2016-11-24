@@ -1,0 +1,250 @@
+<resources>
+    
+    <!-- 布局左右留出的空间大小 -->
+    <dimen name="layout_content_left_right">20dp</dimen>
+    <!-- 每个小布局的标题文字大小 -->
+    <dimen name="layout_content_big_size">20sp</dimen>
+    <!-- 每个小布局的标题文字大小 -->
+    <dimen name="layout_content_title_size">18sp</dimen>
+    <!-- 每个小布局的正文文字大小 -->
+    <dimen name="layout_content_text_size">16sp</dimen>
+    <!-- 每个小布局的提示文字大小 -->
+    <dimen name="layout_content_tip_size">14sp</dimen>
+    <!-- 获取验证码的按钮的长度 -->
+    <dimen name="get_checknumber_but_width">100dp</dimen>
+    <!-- 获取验证码的按钮宽度 -->
+    <dimen name="get_checknumber_but_height">43dp</dimen>
+    <!-- activity按钮的高度 -->
+    <dimen name="layout_content_but_height">45dp</dimen>
+    <!-- activity按钮文字的大小 -->
+    <dimen name="layout_content_but_text_size">16sp</dimen>
+	<!-- activity圆形edittext的高度 -->
+    <dimen name="layout_content_corner_edittext_height">43dp</dimen>
+    <!-- activity圆形edittext之间的间隔 -->
+    <dimen name="layout_content_corner_edittext_space">20dp</dimen>
+    <!-- activity圆形edittext的paddingleft和paddingright -->
+    <dimen name="layout_content_corner_edittext_padding_left_right">10dp</dimen>
+    <!-- activity白底edittext之间的间隔 -->
+    <dimen name="layout_content_white_background_space">10dp</dimen>
+    <!-- acitivty白底exittext的小标题（1-2字）宽度 -->
+    <dimen name="layout_content_white_background_small_title_width">60dp</dimen>
+    <!-- activity白底edittext的小标题线偏左距离 -->
+    <dimen name="layout_content_white_background_small_line_left">80dp</dimen>
+    <!-- acitivty白底exittext的中标题（3字）宽度 -->
+    <dimen name="layout_content_white_background_middle_title_width">70dp</dimen>
+    <!-- activity白底edittext的中标题线偏左距离 -->
+    <dimen name="layout_content_white_background_middle_line_left">90dp</dimen>
+    <!-- activity白底edittext的大标题（4字）宽度 -->
+    <dimen name="layout_content_white_background_big_title_width">100dp</dimen>
+    <!-- activity白底edittext的大标题线偏左距离 -->
+    <dimen name="layout_content_white_background_big_line_left">120dp</dimen>
+    <!-- 每个块之间的距离 -->
+    <dimen name="layout_content_layout_space">10dp</dimen>
+    <!-- 星星评价的高度 -->
+    <dimen name="rating_bar_height">12dp</dimen>
+    <dimen name="rating_bar_tip_height">15dp</dimen>
+    <dimen name="rating_bar_tip_width">30dp</dimen>
+    <!-- 其他text size -->
+    <dimen name="text_10_sp">10sp</dimen>
+    <dimen name="text_12_sp">12sp</dimen>
+    <dimen name="text_14_sp">14sp</dimen>
+    <!-- 自定义dialog -->
+    <dimen name="select_dialog_width">320dp</dimen>
+   	<dimen name="select_dialog_text_size">18sp</dimen>
+   	<dimen name="select_dialog_padding_top_bottom">15dp</dimen>
+   	<dimen name="setting_dialog_width">320dp</dimen>
+   	<!-- 等待框的大小 -->
+   	<dimen name="waiting_dialog_size">80dp</dimen>
+   	<!-- 如果不是Gridview的Item，roundImageView大小 -->
+   	<dimen name="roundimageview_size">40dp</dimen>
+    
+   
+    <dimen name="login_icon_top">60dp</dimen>
+    <dimen name="login_icon_bottom">40dp</dimen>
+    <dimen name="login_info_padding_top_bottom">10dp</dimen>
+    <dimen name="login_info_icon_right">20dp</dimen>
+    <dimen name="login_info_text_size">18sp</dimen>
+    <dimen name="login_info_text_padding">5dp</dimen>
+    <dimen name="login_but_top">30dp</dimen>
+    <dimen name="login_but_bottom">20dp</dimen>
+    <dimen name="login_logo_wap_bottom">10dp</dimen>
+    <dimen name="login_logo_wap_text_size">13sp</dimen>
+    
+    <dimen name="title_layout_title_size">20sp</dimen>
+    <dimen name="title_layout_text_size">16sp</dimen>
+   	<dimen name="title_layout_height">50dp</dimen>
+   	<dimen name="title_layout_bottom">40dp</dimen>
+   	<dimen name="title_layout_left_right">20dp</dimen>
+   	
+   	
+   	<dimen name="registerdriver_info_space">10dp</dimen>
+   	<dimen name="registerdriver_location_horizontal_space">5dp</dimen>
+   	
+   	<dimen name="selectlocation_map_height">300dp</dimen>
+   	<dimen name="selectlocation_but_height">30dp</dimen>
+   	<dimen name="selectlocation_but_width">50dp</dimen>
+   	<dimen name="selectlocation_but_text_size">15sp</dimen>
+   	<dimen name="selectlocation_item_title_size">18sp</dimen>
+   	<dimen name="selectlocation_item_detail_size">15sp</dimen>
+   	<dimen name="selectlocation_item_space">5dp</dimen>
+   	
+   	<dimen name="selectcity_search_text_size">16sp</dimen>
+   	<dimen name="selectcity_search_text_padding">10sp</dimen>
+   	<dimen name="selectcity_index_width">30dp</dimen>
+   	<dimen name="selectcity_item_text_left">20dp</dimen>
+   	<dimen name="selectcity_item_index_text_top_bottom">5dp</dimen>
+   	<dimen name="selectcity_item_city_text_top_bottom">10dp</dimen>
+   	<dimen name="selectcity_item_index_text_size">15sp</dimen>
+   	<dimen name="selectcity_item_city_text_size">18sp</dimen>
+   	<dimen name="selectcity_item_hot_city_padding">10dp</dimen>
+   	<dimen name="selectcity_item_hot_city_item_top_bottom">5dp</dimen>
+   	<dimen name="selectcity_item_hot_city_item_left_right">10dp</dimen>
+   	
+   	<dimen name="selecttime_sigal_width">90dp</dimen>
+   	
+   	<dimen name="select_picture_way_text_size">18sp</dimen>
+   	<dimen name="select_picture_way_text_top_bottom">10dp</dimen>
+   	<dimen name="select_picture_way_text_space">10dp</dimen>
+   	
+   	<dimen name="home_title_layout_title_size">20sp</dimen>
+   	<dimen name="home_title_layout_tip_size">16sp</dimen>
+   	<dimen name="home_title_layout_height">50dp</dimen>
+   	<dimen name="home_title_layout_left_right">20dp</dimen>
+    
+    <dimen name="home_tip_vertical_space">8dp</dimen>
+    <dimen name="home_tip_horizontal_space">15dp</dimen>
+    <dimen name="home_appointment_but_padding">5dp</dimen>
+    <dimen name="home_notification_top_bottom">8dp</dimen>
+    <dimen name="home_notification_tip_top_bottom">6dp</dimen>
+    <dimen name="home_but_bottom">50dp</dimen>
+    <dimen name="home_but_vertical_space">20dp</dimen>
+    <dimen name="home_driver_state_bottom">15dp</dimen>
+    
+    <dimen name="home_mode_but_size">60dp</dimen>
+    
+    <dimen name="receiverorder_but_size">90dp</dimen>
+    <dimen name="receiverorder_but_time_size">20sp</dimen>
+    <dimen name="receiverorder_but_tip_size">20sp</dimen>
+    <dimen name="receiverorder_content_vertical_space">10dp</dimen>
+    
+    <dimen name="setting_gps_dialog_tip_top_bottom">40dp</dimen>
+    
+    <dimen name="carbelong_item_padding">20dp</dimen>
+    <dimen name="carbelong_item_title_size">17sp</dimen>
+    <dimen name="carbelong_item_space">8dp</dimen>
+    <dimen name="carbelong_item_middle_space">15dp</dimen>
+    <dimen name="carbelong_item_describe_size">14sp</dimen>
+    <dimen name="carbelong_item_describe_height">20dp</dimen>
+    <dimen name="carbelong_item_but_width">50dp</dimen>
+    <dimen name="carbelong_item_but_height">30dp</dimen>
+    <dimen name="carbelong_tip_icon_padding">5dp</dimen>
+    <dimen name="carbelong_tip_icon_size">20dp</dimen>
+    
+    <dimen name="registercar_carattribute_but_height">45dp</dimen>
+    <dimen name="registercar_carattribute_but_top_bottom">20dp</dimen>
+    <dimen name="registercar_type_space">15dp</dimen>
+    <dimen name="registercar_type_checkbox_size">10dp</dimen>
+    
+    <dimen name="carsize_weight_width">50dp</dimen>
+    <dimen name="carsize_size_width">120dp</dimen>
+    <dimen name="carsize_tip_size">18sp</dimen>
+    <dimen name="carsize_weight_left">20dp</dimen>
+    <dimen name="carsize_weight_right">10dp</dimen>
+    <dimen name="carsize_size_left">15dp</dimen>
+    <dimen name="carsize_size_right">10dp</dimen>
+    
+    <dimen name="applicationbinding_tip_top">50dp</dimen>
+    <!-- 弥补TextView里面空余的距离 -->
+    <dimen name="applicationbinding_tip_icon_padding">5dp</dimen>
+    <dimen name="applicationbinding_tip_line_space">10dp</dimen>
+    <dimen name="applicationbinding_tip_space">5dp</dimen>
+    <dimen name="applicationbinding_tip_icon_size">20dp</dimen>
+    
+    <dimen name="me_base_info_vertical_space">10dp</dimen>
+    <dimen name="me_headsview_size">75dp</dimen>
+    <dimen name="me_base_info_credit_space">10dp</dimen>
+    <dimen name="me_base_info_name_carnumber_space">30dp</dimen>
+    <dimen name="me_base_info_bar_top_bottom">5dp</dimen>
+    <dimen name="me_base_info_bar_vertical_space">2dp</dimen>
+    <dimen name="me_item_top_bottom">13dp</dimen>
+    <dimen name="me_item_space">0.5dp</dimen>
+    
+    <dimen name="personmessage_item_top_bottom">13dp</dimen>
+    <dimen name="personmessage_img_space">5dp</dimen>
+    
+    <dimen name="managercar_item_top_bottom">13dp</dimen>
+    <dimen name="managercar_img_space">5dp</dimen>
+    
+    <dimen name="managernocar_tip_top">100dp</dimen>
+    <dimen name="managernocar_but_width">200dp</dimen>
+    <dimen name="managernocar_but_height">40dp</dimen>
+    
+    <dimen name="unbinding_padding">13dp</dimen>
+    <dimen name="unbinding_but_top">30dp</dimen>
+    
+    <dimen name="select_unbinding_way_text_size">18sp</dimen>
+   	<dimen name="select_unbinding_way_text_top_bottom">10dp</dimen>
+   	<dimen name="select_unbinding_way_text_space">10dp</dimen>
+   	
+   	<dimen name="myappointment_item_vertical_space">10dp</dimen>
+   	
+   	<dimen name="orderdetail_vertical_space">15dp</dimen>
+   	<dimen name="orderdetail_way_item_left">20dp</dimen>
+   	<dimen name="orderdetail_way_item_vertical_space">3dp</dimen>
+   	<dimen name="orderdetail_way_item_space">15dp</dimen>
+   	<dimen name="orderdetail_sendgoods_top_bottom">10dp</dimen>
+   	<dimen name="orderdetail_price_top_bottom">10dp</dimen>
+   	<dimen name="orderdetail_price_text_size">20sp</dimen>
+   	
+   	<dimen name="driverrecord_vertical_space">10dp</dimen>
+   	<dimen name="driverrecord_item_vertical_space">10dp</dimen>
+   	<dimen name="driverrecord_item_but_width">60dp</dimen>
+   	<dimen name="driverrecord_item_but_height">30dp</dimen>
+   	
+   	<dimen name="driverrecorddetail_title_height">30dp</dimen>
+   	<dimen name="driverrecorddetail_title_width">50dp</dimen>
+   	
+   	<dimen name="driverrecorddetail_item_info_vertical_space">5dp</dimen>
+   	
+   	<dimen name="accountbook_vertical_space">10dp</dimen>
+   	<dimen name="accountbook_current_year_text_size">14sp</dimen>
+   	<dimen name="accountbook_current_month_text_size">40sp</dimen>
+   	<dimen name="accountbook_current_month_text_width">10dp</dimen>
+   	<dimen name="accountbook_current_month_tip_width">5dp</dimen>
+   	<dimen name="accountbook_current_month_width">70dp</dimen>
+   	<dimen name="accountbook_current_month_height">35dp</dimen>
+   	<dimen name="accountbook_current_month_tip_size">16sp</dimen>
+   	<dimen name="accountbook_time_horizontal_space">5dp</dimen>
+   	<dimen name="accountbook_line_left">30dp</dimen>
+   	
+   	<dimen name="goorder_title_layout_top_bottom">10dp</dimen>
+   	
+   	<dimen name="home_mode_big_but_size">90dp</dimen>
+   	<dimen name="home_mode_big_but_text_szie">20sp</dimen>
+   	<dimen name="home_mode_title_width">240dp</dimen>
+   	<dimen name="home_mode_title_height">50dp</dimen>
+   	<dimen name="home_mode_title_size">18sp</dimen>
+   	<dimen name="home_mode_title_view_width">120dp</dimen>
+   	<dimen name="home_mode_title_view_height">50dp</dimen>
+   	
+   	<dimen name="home_mode_left_right">10dp</dimen>
+   	
+   	<dimen name="home_mode_fragment_top">10dp</dimen>
+   	<dimen name="home_mode_backlocation_search_padding">10dp</dimen>
+   	
+   	<dimen name="backlocation_info_horizontal_space">10dp</dimen>
+   	<dimen name="backlocation_list_item_top_bottom">10dp</dimen>
+   	<dimen name="backlocation_list_item_vertical">5dp</dimen>
+   	
+   	<dimen name="appointment_item_space">10dp</dimen>
+   	<dimen name="appointment_item_horizontal_left_right">10dp</dimen>
+   	<dimen name="appointment_item_height">40dp</dimen>
+   	
+   	<dimen name="uploadpicture_but_size">90dp</dimen>
+   	
+   	<dimen name="comment_small_vertical_space">5dp</dimen>
+   	<dimen name="comment_normal_vertical_space">15dp</dimen>
+   	<dimen name="comment_big_vertical_space">25dp</dimen>
+   	<dimen name="comment_money_size">22sp</dimen>
+
+</resources>

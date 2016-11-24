@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <include 
+        android:id="@+id/tixing_title"
+        layout="@+layout/layout_title_2"
+        />
+     
+     <ListView 
+         android:id="@+id/tixing_list"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scrollbars="none"
+         android:divider="#9c9c9c"
+         android:dividerHeight="0.5dp"
+         android:cacheColorHint="#00000000"
+         ></ListView>
+
+</LinearLayout>

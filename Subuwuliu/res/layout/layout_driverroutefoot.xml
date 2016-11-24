@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/driverrecordroute_footview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/layout_content_left_right"
+    android:layout_marginRight="@dimen/layout_content_left_right"
+    android:drawableLeft="@drawable/sjfk"
+    android:drawablePadding="@dimen/layout_content_left_right"
+    android:textColor="#6c6c6c"
+    android:textSize="@dimen/layout_content_text_size" >
+
+</TextView>

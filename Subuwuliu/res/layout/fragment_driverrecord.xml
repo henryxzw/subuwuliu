@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/driverrecord_current_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EF8B2B"
+        android:paddingBottom="@dimen/driverrecord_vertical_space"
+        android:paddingLeft="@dimen/layout_content_left_right"
+        android:paddingRight="@dimen/layout_content_left_right"
+        android:paddingTop="@dimen/driverrecord_vertical_space" >
+
+        <TextView
+            android:id="@+id/driverrecord_operation_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="正在运行的订单"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/layout_content_text_size" />
+
+        <TextView
+            android:id="@+id/driverrecord_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/layout_content_text_size" />
+
+        <ImageView
+            android:id="@+id/driverrecord_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverrecord_operation_number"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="@dimen/layout_content_left_right"
+            android:src="@drawable/ywcd_b" />
+
+        <TextView
+            android:id="@+id/driverrecord_currentplace_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverrecord_icon"
+            android:text="当前"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_content_tip_size" />
+
+        <TextView
+            android:id="@+id/driverrecord_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverrecord_operation_number"
+            android:layout_marginLeft="@dimen/layout_content_left_right"
+            android:layout_marginTop="@dimen/layout_content_left_right"
+            android:layout_toRightOf="@+id/driverrecord_icon"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_content_text_size" />
+
+        <TextView
+            android:id="@+id/driverrecord_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/driverrecord_place"
+            android:layout_below="@+id/driverrecord_place"
+            android:layout_toRightOf="@+id/driverrecord_currentplace_tip"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/layout_content_tip_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lishi_yundan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_content_left_right"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/driverrecord_vertical_space"
+        android:paddingLeft="@dimen/layout_content_left_right"
+        android:paddingRight="@dimen/layout_content_left_right"
+        android:paddingTop="@dimen/driverrecord_vertical_space"
+        android:text="历史运单"
+        android:textColor="#3c3c3c"
+        android:textSize="@dimen/layout_content_big_size" />
+
+    <include layout="@layout/view_line_small" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/driverrecord_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#eeeeee"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/yundan_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="没有运单记录"
+        android:textSize="20dp"
+        android:textColor="@color/qianhuise" />
+
+</LinearLayout>

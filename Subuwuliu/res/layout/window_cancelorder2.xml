@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cancelorder2_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000" >
+
+    <LinearLayout
+        android:layout_width="@dimen/select_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/receiverorder_content_top_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/receiverorder_content_vertical_space"
+                android:text="运单取消"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/layout_content_big_size" />
+            <TextView
+                android:id="@+id/cancelorder2_yid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/layout_content_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayou_tf1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/receiverorder_content_bottom_background"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_left_right"
+                android:src="@drawable/shibai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+                android:text="客户已取消您的订单"
+                android:textColor="#6c6c6c"
+                android:textSize="@dimen/layout_content_text_size" />
+
+            <TextView
+                android:id="@+id/cancelorder2_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+                android:textColor="#6c6c6c"
+                android:textSize="@dimen/layout_content_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="返空费将会在客户订单金额里面扣除并返还给你"
+                android:textColor="#d24848"
+                android:textSize="@dimen/layout_content_tip_size" />
+
+            <Button
+                android:id="@+id/cancelorder2_but_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_but_height"
+                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="@dimen/layout_content_left_right"
+                android:background="@drawable/goorder_but_background"
+                android:text="同意取消"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/layout_content_text_size" />
+
+            <Button
+                android:id="@+id/cancelorder2_but_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_but_height"
+                android:layout_marginBottom="@dimen/layout_content_left_right"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/goorder_but_background"
+                android:text="不同意，客服介入"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/layout_content_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayou_tf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/receiverorder_content_bottom_background"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_left_right"
+                android:src="@drawable/wancheng" />
+
+            <TextView
+                android:id="@+id/linear_text_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+                android:text="客户已取消您的订单"
+                android:textColor="#6c6c6c"
+                android:textSize="@dimen/layout_content_text_size" />
+
+            <TextView
+                android:id="@+id/linear_text_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:text="返空费将会在客 你"
+                android:textColor="#6c6c6c"
+                android:textSize="@dimen/layout_content_text_size" />
+            <Button
+                android:id="@+id/linear_text_c"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_but_height"
+                android:layout_marginBottom="@dimen/receiverorder_content_vertical_space"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="@dimen/layout_content_left_right"
+                android:background="@drawable/goorder_but_background"
+                android:text="知道了"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/layout_content_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_gps_background"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_content_left_right" >
+
+    <TextView
+        android:id="@+id/isnet_wanglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="#6c6c6c"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/isnet_wanglu"
+        android:layout_alignParentTop="true"
+        android:text="友情提示"
+        android:textColor="#6c6c6c"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/isnet_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/isnet_wanglu"
+        android:layout_below="@+id/isnet_wanglu"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/setting_gps_background"
+        android:gravity="right|center_vertical"
+        android:text="确定"
+        android:textColor="@color/hongse"
+        android:textSize="18dp" />
+
+</RelativeLayout>

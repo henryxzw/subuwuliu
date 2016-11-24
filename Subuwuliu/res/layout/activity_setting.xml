@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/setting_title"
+        layout="@+layout/layout_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_base_info_vertical_space"
+        android:background="#dddddd" />
+
+    <TextView
+        android:id="@+id/setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/me_item_top_bottom"
+        android:paddingLeft="@dimen/layout_content_left_right"
+        android:paddingRight="@dimen/layout_content_left_right"
+        android:paddingTop="@dimen/me_item_top_bottom"
+        android:text="关于速步车队"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size" />
+
+    <include layout="@layout/view_line_small" />
+
+    <LinearLayout
+        android:id="@+id/setting_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkVersion"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingBottom="@dimen/me_item_top_bottom"
+            android:paddingLeft="@dimen/layout_content_left_right"
+            android:paddingRight="@dimen/layout_content_left_right"
+            android:paddingTop="@dimen/me_item_top_bottom"
+            android:text="升级软件"
+            android:textColor="#6c6c6c"
+            android:textSize="@dimen/layout_content_text_size" />
+
+        <TextView
+            android:id="@+id/setting_new_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="@dimen/me_item_top_bottom"
+            android:paddingLeft="@dimen/layout_content_left_right"
+            android:paddingRight="@dimen/layout_content_left_right"
+            android:paddingTop="@dimen/me_item_top_bottom"
+            android:textColor="#6c6c6c"
+            android:textSize="@dimen/layout_content_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_base_info_vertical_space"
+        android:background="#dddddd" />
+
+    <TextView
+        android:id="@+id/setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/me_item_top_bottom"
+        android:paddingLeft="@dimen/layout_content_left_right"
+        android:paddingRight="@dimen/layout_content_left_right"
+        android:paddingTop="@dimen/me_item_top_bottom"
+        android:text="退出登录"
+        android:textColor="#6c6c6c"
+        android:textSize="@dimen/layout_content_text_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dddddd" >
+
+        <TextView
+            android:id="@+id/setting_currentversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/layout_content_left_right"
+            android:paddingTop="@dimen/layout_content_left_right"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/layout_content_tip_size" />
+    </RelativeLayout>
+
+</LinearLayout>

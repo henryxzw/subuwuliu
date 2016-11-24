@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uploadcertificates_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/uploadcertificates_title"
+        layout="@+layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_driver_license"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_driver_license_tip"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/layout_content_tip_size" />
+            </LinearLayout>
+
+            <com.johan.subuwuliu.view.ScrollGridView
+                android:id="@+id/uploadcertificates_driver_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_middle_title_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_validity_period"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <TextView
+                    android:id="@+id/uploadcertificates_driver_license_validity_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/uploadcertificates_validity_period_tip"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_middle_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_layout_space"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_car_insurance"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_car_insurance_tip"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/layout_content_tip_size" />
+            </LinearLayout>
+
+            <com.johan.subuwuliu.view.ScrollGridView
+                android:id="@+id/uploadcertificates_car_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_middle_title_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_validity_period"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <TextView
+                    android:id="@+id/uploadcertificates_car_insurance_validity_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/uploadcertificates_validity_period_tip"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_middle_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_layout_space"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_operation"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_operation_tip"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/layout_content_tip_size" />
+            </LinearLayout>
+
+            <com.johan.subuwuliu.view.ScrollGridView
+                android:id="@+id/uploadcertificates_operation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_middle_title_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_validity_period"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <TextView
+                    android:id="@+id/uploadcertificates_operation_validity_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/uploadcertificates_validity_period_tip"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_middle_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_layout_space"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#dddddd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_customs_supervision_book"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_title_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_customs_supervision_book_tip"
+                    android:textColor="#9c9c9c"
+                    android:textSize="@dimen/layout_content_tip_size" />
+
+                <CheckBox
+                    android:id="@+id/uploadcertificates_customs_supervision_book_checkbox"
+                    style="@style/DiDiCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <com.johan.subuwuliu.view.ScrollGridView
+                android:id="@+id/uploadcertificates_customs_supervision_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_content_left_right"
+                android:paddingRight="@dimen/layout_content_left_right" >
+
+                <TextView
+                    android:layout_width="@dimen/layout_content_white_background_middle_title_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/uploadcertificates_validity_period"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/layout_content_text_size" />
+
+                <TextView
+                    android:id="@+id/uploadcertificates_customs_supervision_book_validity_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/uploadcertificates_validity_period_tip"
+                    android:textColor="#6c6c6c"
+                    android:textColorHint="#9c9c9c"
+                    android:textSize="@dimen/layout_content_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/layout_content_white_background_space"
+                android:layout_marginLeft="@dimen/layout_content_white_background_middle_line_left"
+                android:layout_marginRight="@dimen/layout_content_left_right"
+                android:layout_marginTop="@dimen/layout_content_white_background_space"
+                android:background="#9c9c9c" />
+
+            <Button
+                android:id="@+id/uploadcertificates_but"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_content_but_height"
+                android:layout_margin="@dimen/layout_content_left_right"
+                android:background="@drawable/myappointment_item_but_background"
+                android:gravity="center"
+                android:text="@string/uploadcertificates_but_tip"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/layout_content_but_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

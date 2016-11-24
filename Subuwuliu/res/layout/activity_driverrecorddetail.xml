@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/driverrecorddetail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:background="#242736"
+        >
+        <ImageView 
+	        android:id="@+id/driverrecorddetail_back"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/back"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="@dimen/title_layout_left_right"
+	        android:paddingRight="@dimen/title_layout_left_right"
+	        />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+            <TextView 
+                android:id="@+id/driverrecorddetail_title_left"
+                android:layout_width="@dimen/driverrecorddetail_title_width"
+                android:layout_height="@dimen/driverrecorddetail_title_height"
+                android:textColor="@drawable/driverrecorddetail_title_text_color"
+                android:textSize="@dimen/layout_content_tip_size"
+                android:text="路线"
+                android:gravity="center"
+                android:background="@drawable/driverrecorddetail_title_left_background"
+                />
+            <TextView 
+                android:id="@+id/driverrecorddetail_title_right"
+                android:layout_width="@dimen/driverrecorddetail_title_width"
+                android:layout_height="@dimen/driverrecorddetail_title_height"
+                android:textColor="@drawable/driverrecorddetail_title_text_color"
+                android:textSize="@dimen/layout_content_tip_size"
+                android:text="详情"
+                android:gravity="center"
+                android:background="@drawable/driverrecorddetail_title_right_background"
+                android:layout_marginLeft="-1dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:id="@+id/driverrecorddetail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+
+</LinearLayout>

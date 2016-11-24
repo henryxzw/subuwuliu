@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+	<include 
+        android:id="@+id/help_title"
+        layout="@+layout/layout_title"
+        />
+	
+	<ProgressBar 
+	    android:id="@+id/help_progress"
+	    style="?android:attr/progressBarStyleHorizontal"  
+	    android:layout_width="match_parent"  
+	    android:layout_height="3dp"  
+	    android:max="100"  
+	    android:progress="0"    
+	    android:progressDrawable="@drawable/webview_progressbar"   
+	    android:visibility="visible"
+	    />
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	    
+		<WebView 
+		    android:id="@+id/help_webview"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    />
+		
+		<TextView 
+		    android:id="@+id/help_tip"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="加载失败，点击重新加载"
+		    android:textColor="#6c6c6c"
+		    android:textSize="@dimen/layout_content_tip_size"
+		    android:gravity="center"
+		    android:background="#ffffff"
+		    />
+		
+	</RelativeLayout>
+    
+</LinearLayout>
